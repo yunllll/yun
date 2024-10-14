@@ -8,9 +8,11 @@
       <el-table-column prop="name" label="Name" width="180" />
       <el-table-column prop="address" label="Address" />
     </el-table>
+    <VueUiRadar :data="chartData" />
   </template>
-
 <script setup>
+import { VueUiRadar } from "vue-data-ui";
+
 const tableRowClassName = ({ row, rowIndex }) => {
   if (rowIndex === 1) {
     return 'warning-row';
@@ -53,3 +55,20 @@ const tableData = [
   --el-table-tr-bg-color: var(--el-color-success-light-9);
 }
 </style>
+<!-- import React from 'react';
+import { Input, QRCode, Space } from 'antd';
+const App = () => {
+  const [text, setText] = React.useState('https://ant.design/');
+  return (
+    <Space direction="vertical" align="center">
+      <QRCode value={text || '-'} />
+      <Input
+        placeholder="-"
+        maxLength={60}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+    </Space>
+  );
+};
+export default App; -->
