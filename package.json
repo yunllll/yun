@@ -7,9 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "core-js": "^3.8.3",
     "dplayer": "^1.27.1",
     "element-plus": "^2.8.5",
+    "three": "^0.169.0",
+    "vanta": "^0.5.24",
     "vue": "^3.2.13",
     "vue-data-ui": "^2.3.25",
     "vue-router": "^4.0.3",
@@ -20,7 +23,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "vue-cli-plugin-axios": "^0.0.4"

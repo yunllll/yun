@@ -1,4 +1,14 @@
 package com.example.springboot.entity;
-/**Rabbit**/
+
+
+import lombok.Data;
+
+/**
+ * Rabbit
+ **/
+@Data
 public class User {
+    private int id;
+    private String username;
+    private int age;
 }
