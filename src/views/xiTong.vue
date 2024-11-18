@@ -71,7 +71,7 @@
                             No.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province
                         </el-descriptions-item>
                     </el-descriptions>
-                    <el-table :data="users" style="width: 50%" :row-class-name="tableRowClassName">
+                    <el-table :data="users" style="width: 50% ;margin-top: 50px;" :row-class-name="tableRowClassName"  height="250">
                         <el-table-column prop="id" label="Id" width="180" />
                         <el-table-column prop="username" label="姓名" width="180" />
                         <el-table-column prop="age" label="年龄" />
@@ -84,8 +84,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { onMounted } from 'vue'
+import { ref,onMounted } from 'vue'
 import axios from "axios"
 import {
     Document,
@@ -95,14 +94,15 @@ import {
     Message
 } from '@element-plus/icons-vue';
 
-var users = []
+// 使用 ref 创建响应式数据
+const users = ref([]);
 // 使用 onMounted 生命周期钩子
 onMounted(() => {
     // 在组件挂载后执行的代码
     // fetchData();
-    axios.get('http://localhost:9090/user/inquire').then(res => {
+    axios.get('http://localhost:9090/user/inquire').then(res=>{
         console.log(res.data)
-        users = res.data.data
+        users.value = res.data.data
     })
 });
 
@@ -141,29 +141,6 @@ const tableRowClassName = ({ row, rowIndex }) => {
     }
     return '';
 }
-
-const tableData = [
-    {
-        date: '2016-05-03',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles',
-    },
-    {
-        date: '2016-05-02',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles',
-    },
-    {
-        date: '2016-05-04',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles',
-    },
-    {
-        date: '2016-05-01',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles',
-    },
-];
 </script>
 
 <style lang="scss" scoped>

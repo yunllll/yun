@@ -24,6 +24,11 @@ const routes = [
     name: 'xiTong',
     component: () => import('../views/xiTong.vue')
   },
+  {
+    path: '/pose',
+    name: 'pose',
+    component: () => import('../views/pose.vue')
+  }
 ]
 
 const router = createRouter({

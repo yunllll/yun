@@ -17,17 +17,9 @@ onMounted(() => {
         container: dplayerRef.value,
         screenshot: true,
         video: {
-            url: 'https://www.dmttang.com/bfe37917-1935-43f6-b22b-6e723f20ba82', // 替换为你的视频文件路径
-            pic: '../assets/pic.jpg', // 替换为你的视频封面图路径
-            thumbnails: 'thumbnails.jpg', // 替换为你的视频缩略图路径
-        },
-        subtitle: {
-            url: 'webvtt.vtt', // 替换为你的视频字幕文件路径
-        },
-        danmaku: {
-            id: 'demo',
-            api: 'https://api.prprpr.me/dplayer/',
-        },
+            url: '', // 替换为你的视频文件路径
+           
+        }
     });
 });
 
