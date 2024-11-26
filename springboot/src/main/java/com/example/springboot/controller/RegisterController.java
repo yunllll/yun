@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.springboot.service.EmailService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class RegisterController {
@@ -27,7 +28,9 @@ public class RegisterController {
             return new Response("验证码未发送", null);
         }
         String storedCode = (String) session.getAttribute("code");
-        if (code.equals(storedCode)) {
+        System.out.println("存储的验证码: " + storedCode); // 调试信息
+        System.out.println("输入的验证码: " + code); // 调试信息
+        if (storedCode != null && code.trim().equals(storedCode.trim())) {
             return new Response("验证码正确", null);
         }
         return new Response("验证码错误", null);

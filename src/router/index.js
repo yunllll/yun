@@ -28,7 +28,23 @@ const routes = [
     path: '/pose',
     name: 'pose',
     component: () => import('../views/pose.vue')
-  }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login.vue'),
+    meta: { title: '登录' }
+  },
+  {
+    path: '/validCode',
+    name: 'validCode',
+    component: () => import('../components/validCode.vue')
+  },
+  {
+    path: '/phoneVaild',
+    name: 'phoneVaild',
+    component: () => import('../components/phoneVaild.vue')
+  },
 ]
 
 const router = createRouter({

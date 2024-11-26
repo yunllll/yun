@@ -1,8 +1,15 @@
 server:
   port: 9090
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/yun
     username: root
     password: root
+  mail:
+    host: smtp.163.com
+    port: 25  # 使用端口 25
+    username: 13165967980@163.com  # 你的网易邮箱地址
+    password: ZQYTNNU33x8i8FXz  # 使用授权码
+    default-encoding: UTF-8
