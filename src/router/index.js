@@ -50,6 +50,12 @@ const routes = [
     name: 'feijiejie',
     component: () => import('../views/feijiejie.vue'),
     meta: { title: '肺结节检测' }
+  },
+  {
+    path: '/shendanshu',
+    name: 'tree',
+    component: () => import('../views/tree.vue'),
+    meta: { title: 'Merry Christmas!' }
   }
 ]
 
