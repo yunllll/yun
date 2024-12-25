@@ -6,9 +6,14 @@ npm install  npm run serve npm run build
 ```
 
 ### 内容展示
+![image](圣诞树/pink.png)
+![image](rotate_tree/pose.png)
 ![image](rotate_tree/肺结节检测.png)
 ![image](rotate_tree/ttttt.jpg)
 ![image](rotate_tree/crm.png)
 ![image](rotate_tree/系统.png)
 ![image](rotate_tree/pose.png)
+![image](圣诞树/green.png)
+![image](圣诞树/a.png)
+![image](圣诞树/雪花.jpg)
 See [Configuration Reference](https://cli.vuejs.org/config/).
