@@ -45,6 +45,12 @@ const routes = [
     name: 'phoneVaild',
     component: () => import('../components/phoneVaild.vue')
   },
+  {
+    path: '/feijiejie',
+    name: 'feijiejie',
+    component: () => import('../views/feijiejie.vue'),
+    meta: { title: '肺结节检测' }
+  }
 ]
 
 const router = createRouter({
