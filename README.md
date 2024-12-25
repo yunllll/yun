@@ -15,5 +15,6 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
+### 内容展示
+![圣诞树](rotate_tree\ttttt.jpg)
 See [Configuration Reference](https://cli.vuejs.org/config/).
