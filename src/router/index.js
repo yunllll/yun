@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/',
+    path: '/element',
     name: 'element',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -46,7 +46,7 @@ const routes = [
     component: () => import('../components/phoneVaild.vue')
   },
   {
-    path: '/feijiejie',
+    path: '/',
     name: 'feijiejie',
     component: () => import('../views/feijiejie.vue'),
     meta: { title: '肺结节检测' }
