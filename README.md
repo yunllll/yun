@@ -16,5 +16,6 @@ npm run build
 ```
 
 ### 内容展示
-![圣诞树](rotate_tree/ttttt.jpg)
+![image](rotate_tree/ttttt.jpg)
+<!-- ![圣诞树]() -->
 See [Configuration Reference](https://cli.vuejs.org/config/).
