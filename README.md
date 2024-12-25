@@ -8,7 +8,6 @@ npm install  npm run serve npm run build
 
 ### 内容展示
 ![image](圣诞树/pink.png)
-![image](rotate_tree/pose.png)
 ![image](rotate_tree/肺结节检测.png)
 ![image](rotate_tree/ttttt.jpg)
 ![image](rotate_tree/crm.png)
